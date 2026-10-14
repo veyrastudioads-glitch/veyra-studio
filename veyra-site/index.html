@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Veyra Studio | AI Product Ads</title>
+<meta name="description" content="AI product ads and reels for beverage, beauty and tech brands.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@500;800&family=Manrope:wght@400;500&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#000;--ink:#f3efe6;--mute:#9b968a;--gold:#c9a24b;--line:#2a2823}
+*{box-sizing:border-box;margin:0}
+html{scroll-behavior:smooth}
+body{background:var(--bg);color:var(--ink);font:400 17px/1.6 Manrope,system-ui,sans-serif}
+a{color:inherit}
+:focus-visible{outline:2px solid var(--gold);outline-offset:3px}
+.wrap{max-width:1100px;margin:0 auto;padding:0 22px}
+header{display:flex;justify-content:space-between;align-items:center;padding:22px 0}
+.logo{font:800 20px 'Bricolage Grotesque',sans-serif;letter-spacing:.14em;text-decoration:none}
+.logo span{color:var(--gold)}
+nav a{margin-left:22px;color:var(--mute);text-decoration:none}
+nav a:hover{color:var(--ink)}
+.hero{padding:90px 0 70px}
+h1{font:800 clamp(40px,8vw,88px)/1 'Bricolage Grotesque',sans-serif;max-width:12em;letter-spacing:-.02em}
+.hero p{margin-top:26px;max-width:34em;color:var(--mute);font-size:19px}
+.btn{display:inline-block;margin-top:34px;background:var(--gold);color:#000;padding:14px 26px;font-weight:500;text-decoration:none;border-radius:2px}
+.btn:hover{background:var(--ink)}
+h2{font:800 clamp(28px,4vw,40px)/1.1 'Bricolage Grotesque',sans-serif;margin-bottom:28px}
+section{padding:60px 0;border-top:1px solid var(--line)}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(210px,1fr));gap:14px}
+.tile{position:relative;aspect-ratio:9/16;background:#0d0c0a;border:1px solid var(--line);overflow:hidden}
+.tile video,.tile img{width:100%;height:100%;object-fit:cover;display:block}
+.tile figcaption{position:absolute;left:0;right:0;bottom:0;padding:34px 14px 12px;background:linear-gradient(transparent,rgba(0,0,0,.85));font-size:15px}
+.tile small{display:block;color:var(--mute);font-size:13px}
+.note{margin-top:16px;color:var(--mute);font-size:14px}
+.services{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:34px}
+.services h3{font:800 20px 'Bricolage Grotesque',sans-serif;color:var(--gold);margin-bottom:8px}
+.services p{color:var(--mute)}
+.contact p{max-width:30em;color:var(--mute);margin-bottom:6px}
+footer{padding:30px 0 50px;color:var(--mute);font-size:14px;border-top:1px solid var(--line)}
+@media(prefers-reduced-motion:no-preference){.btn{transition:background .2s}}
+</style>
+</head>
+<body>
+<div class="wrap">
+<header>
+  <a class="logo" href="#top">VEYRA<span>.</span>STUDIO</a>
+  <nav><a href="#work">Work</a><a href="#services">Services</a><a href="#contact">Contact</a></nav>
+</header>
+
+<main id="top">
+<div class="hero">
+  <h1>Product ads that make people stop scrolling.</h1>
+  <p>We make AI-generated reels and creatives for beverage, beauty and tech brands. Short turnaround, no film crew.</p>
+  <a class="btn" href="#contact">Get a free sample ad</a>
+</div>
+
+<section id="work">
+  <h2>Selected work</h2>
+  <div class="grid">
+    <!-- Put your files in an "assets" folder. Edit src and caption for each tile. -->
+    <figure class="tile"><video src="assets/volte.mp4" muted loop playsinline preload="metadata" onmouseenter="this.play()" onmouseleave="this.pause()" controls></video><figcaption>Volté Energy<small>Concept ad</small></figcaption></figure>
+    <figure class="tile"><video src="assets/tangy-tamarind.mp4" muted loop playsinline preload="metadata" onmouseenter="this.play()" onmouseleave="this.pause()" controls></video><figcaption>Tangy Tamarind<small>Concept ad</small></figcaption></figure>
+    <figure class="tile"><video src="assets/aurelis.mp4" muted loop playsinline preload="metadata" onmouseenter="this.play()" onmouseleave="this.pause()" controls></video><figcaption>Aurelis Éclat Noir<small>Concept ad</small></figcaption></figure>
+    <figure class="tile"><video src="assets/watch.mp4" muted loop playsinline preload="metadata" onmouseenter="this.play()" onmouseleave="this.pause()" controls></video><figcaption>Smartwatch<small>Concept ad</small></figcaption></figure>
+    <figure class="tile"><video src="assets/sneaker.mp4" muted loop playsinline preload="metadata" onmouseenter="this.play()" onmouseleave="this.pause()" controls></video><figcaption>Sneaker<small>Concept ad</small></figcaption></figure>
+  </div>
+  <p class="note">All brands shown are concept work made to show style and quality.</p>
+</section>
+
+<section id="services">
+  <h2>What we make</h2>
+  <div class="services">
+    <div><h3>AI product reels</h3><p>9:16 videos that show your product at its best, ready for Instagram, TikTok and Shorts.</p></div>
+    <div><h3>Creative ad sets</h3><p>Several versions of one ad so you can test which hook and visual sell best.</p></div>
+    <div><h3>Launch visuals</h3><p>Posters, stories and product shots for a new flavor, scent or device.</p></div>
+  </div>
+</section>
+
+<section id="contact" class="contact">
+  <h2>Want a free sample ad?</h2>
+  <p>Send us your product name and a photo. We reply within 24 hours.</p>
+  <a class="btn" href="mailto:veyrastudio.ads@gmail.com?subject=Sample%20ad%20request">Email us</a>
+  <a class="btn" style="background:none;color:var(--ink);border:1px solid var(--line);margin-left:10px" href="https://www.instagram.com/veyra.studio_77" target="_blank" rel="noopener">DM on Instagram</a>
+</section>
+</main>
+
+<footer>© 2026 Veyra Studio</footer>
+</div>
+</body>
+</html>
